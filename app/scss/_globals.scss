@@ -20,6 +20,10 @@ body{
     font-size: $font-med;
     color:$grayishBlue;
     font-weight: 300;
+
+    &.noscroll{
+        overflow: hidden;
+    }
 }
 
 a,a:visited, a:hover{
