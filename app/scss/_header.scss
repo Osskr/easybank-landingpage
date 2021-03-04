@@ -33,6 +33,7 @@
         left: 0;
         right: 0;
         background-image: linear-gradient($darkBlue, transparent);
+        
        
      
     
@@ -44,12 +45,11 @@
         background-color: $white;
         padding-top: 1.0625rem;
         padding-bottom:1.0625rem;
+        
     }
     &__logo{
 
-        img{
-
-        }
+     
     }
 
     &__menu{
@@ -58,6 +58,9 @@
         border-radius: 5px;
         position: absolute;
         width: calc(100% - 3rem);
+       
+        
+        z-index: 10;
        
         
         a{
@@ -127,15 +130,6 @@
         }
     }
 
-    &__cta{
-        font-size: $font-sm;
-        color:$white;
-        transition: opacity 300ms ease-in-out;
-        
-        &:hover{
-            opacity: 0.65;
-        }
-    }
 
 }
 

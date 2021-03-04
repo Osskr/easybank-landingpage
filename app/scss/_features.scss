@@ -1,0 +1,70 @@
+.feature{
+
+    text-align: center;
+
+    @include breakpoints-up(medium){
+        text-align: left;
+    }
+    background-color: $lightGrayishBlue;
+    &__intro{
+
+        @include breakpoints-up(large){
+            margin-bottom: 3.75rem;
+            width:60%;
+        }
+    }
+    &__grid{
+
+        @include breakpoints-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+   
+
+    &__item{
+    
+    padding: 1rem;
+
+    @include breakpoints-up(medium){
+        flex: 1  0 50%;
+        
+    }
+
+    @include breakpoints-up(large){
+            flex:1;
+        }
+    }
+
+    &__icon{
+        
+        margin-bottom: 0.875rem;
+        @include breakpoints-up(small){
+            margin-bottom:1.25rem;
+        }
+        
+    }
+    &__title{
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.15;
+        color: $darkBlue;
+        margin-bottom:1rem;
+
+
+        @include breakpoints-up(large){
+            margin-bottom: 1.3rem;
+            font-size: 1.5rem;
+        }
+       
+    }
+
+    &__description{ 
+
+        font-size:0.875rem;
+        line-height: 1.5;
+    
+    }
+
+}
